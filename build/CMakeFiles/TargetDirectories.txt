@@ -1,8 +1,0 @@
-/home/lmk/linuxC/Function-of-Linux-C/build/CMakeFiles/edit_cache.dir
-/home/lmk/linuxC/Function-of-Linux-C/build/CMakeFiles/rebuild_cache.dir
-/home/lmk/linuxC/Function-of-Linux-C/build/process_string_function/CMakeFiles/process_string_output.dir
-/home/lmk/linuxC/Function-of-Linux-C/build/process_string_function/CMakeFiles/edit_cache.dir
-/home/lmk/linuxC/Function-of-Linux-C/build/process_string_function/CMakeFiles/rebuild_cache.dir
-/home/lmk/linuxC/Function-of-Linux-C/build/multithreading_function/CMakeFiles/multithreading_output.dir
-/home/lmk/linuxC/Function-of-Linux-C/build/multithreading_function/CMakeFiles/edit_cache.dir
-/home/lmk/linuxC/Function-of-Linux-C/build/multithreading_function/CMakeFiles/rebuild_cache.dir

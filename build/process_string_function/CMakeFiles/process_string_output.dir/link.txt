@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/process_string_output.dir/process_string_function_test.c.o CMakeFiles/process_string_output.dir/__/utils/src/array_utils.c.o CMakeFiles/process_string_output.dir/src/process_string_function.c.o -o ../output/process_string_output 

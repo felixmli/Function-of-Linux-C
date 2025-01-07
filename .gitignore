@@ -1,0 +1,21 @@
+# 忽略 build 目录及其所有内容
+build/
+
+# 忽略 .history 目录及其所有内容
+.history/
+
+# 忽略编译器生成的中间文件
+*.o
+*.obj
+
+# 忽略编译器生成的可执行文件
+*.exe
+*.out
+
+# 忽略临时文件
+*.tmp
+*.log
+
+# 忽略 IDE 生成的项目文件
+*.idea/
+*.vscode/
