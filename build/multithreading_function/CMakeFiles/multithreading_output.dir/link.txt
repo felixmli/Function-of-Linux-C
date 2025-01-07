@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/multithreading_output.dir/multithreading_function_test.c.o CMakeFiles/multithreading_output.dir/__/utils/src/array_utils.c.o CMakeFiles/multithreading_output.dir/src/multithreading_function.c.o -o ../output/multithreading_output 
