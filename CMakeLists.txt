@@ -6,6 +6,7 @@ project(FunctionOfLinuxC)
 # 添加子目录
 add_subdirectory(process_string_function)
 add_subdirectory(multithreading_function)
+add_subdirectory(character_function)
 
 # # 清除所有构建文件
 # add_custom_target(clean
