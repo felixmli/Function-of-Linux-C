@@ -10,6 +10,8 @@ void atoi_test();
 void atol_test();
 
 void ecvt_test();
+void fcvt_test();
+void gcvt_test();
 
 
 #endif // __DATA_EXCHANGE_FUNCTION_H__

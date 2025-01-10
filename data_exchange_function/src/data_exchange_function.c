@@ -99,8 +99,80 @@ void atol_test(){
         The ndigit parameter specifies the number of digits after the decimal point.
         The decpt parameter is a pointer to an integer that will be set to the position of the decimal point.
         The sign parameter is a pointer to an integer that will be set to 0 if the value is positive, and non-zero if the value is negative.
+    tips:
+        The gcvt() function is not thread-safe.
+        Use sprintf() to convert the double value to a string if you want to make the function thread-safe.
+    Output:
+        The string representation of 123.456000 is: 123456
+        The position of the decimal point is: 3
+        The sign of the value is: Positive
 */
 void ecvt_test(){
+    double value = 123.456;
+    int ndigit = 6;
+    int decpt, sign;
+    char *str = ecvt(value, ndigit, &decpt, &sign);
+    printf("The string representation of %f is: %s\n", value, str);
+    printf("The position of the decimal point is: %d\n", decpt);
+    printf("The sign of the value is: %s\n", sign == 0 ? "Positive" : "Negative");
+}
 
+/*
+    function declaration:
+        char *fcvt(double value, int ndigit, int *decpt, int *sign);
+    description:
+        The function fcvt() converts the double value to a string.
+        The converted string is stored in a static buffer.
+        The function returns a pointer to the converted string.
+        The ndigit parameter specifies the number of digits after the decimal point.
+        The decpt parameter is a pointer to an integer that will be set to the position of the decimal point.
+        The sign parameter is a pointer to an integer that will be set to 0 if the value is positive, and non-zero if the value is negative.
+    Tips:
+        The difference between ecvt() and fcvt() is that fcvt() will cut off the trailing zeros.
+        The gcvt() function is not thread-safe.
+        Use sprintf() to convert the double value to a string if you want to make the function thread-safe.
+    Output:
+        The string representation of 123.456000 is: 123456000
+        The position of the decimal point is: 3
+        The sign of the value is: Positive
+*/
+void fcvt_test(){
+    double value = 123.456;
+    int ndigit = 6;
+    int decpt, sign;
+    char *str = fcvt(value, ndigit, &decpt, &sign);
+    printf("The string representation of %f is: %s\n", value, str);
+    printf("The position of the decimal point is: %d\n", decpt);
+    printf("The sign of the value is: %s\n", sign == 0 ? "Positive" : "Negative");
+}
+
+/*
+    function declaration:
+        char *gcvt(double value, int ndigit, char *buf);
+    description:
+        The function gcvt() converts the double value to a string.
+        The converted string is stored in the buffer pointed to by buf.
+        The function returns a pointer to the converted string.
+        The ndigit parameter specifies the number of digits after the decimal point.
+    tips:
+        The difference between gcvt() and e[f]cvt() is that gcvt() will add the decimal point and signal.
+        The gcvt() function is not thread-safe.
+        Use sprintf() to convert the double value to a string if you want to make the function thread-safe.
+    Output:
+        The string representation of 123.456000 is: 123.456
+        The buffer content is: 123.456
+        THe buffer content is: 123.456
+        THe buffer content is: 49
+*/
+void gcvt_test(){
+    double value = 123.456;
+    int ndigit = 6;
+    char buf[20];
+    char *str = gcvt(value, ndigit, buf);
+    printf("The string representation of %f is: %s\n", value, str);
+    printf("The buffer content is: %s\n", buf);
+    printf("THe buffer content is: %s\n", str);
+    // print the ascii value of the first character in the buffer
+    printf("THe buffer content is: %d\n", *str);
 }
 
