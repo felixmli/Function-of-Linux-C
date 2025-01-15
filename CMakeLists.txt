@@ -8,6 +8,7 @@ add_subdirectory(process_string_function)
 add_subdirectory(multithreading_function)
 add_subdirectory(character_function)
 add_subdirectory(data_exchange_function)
+add_subdirectory(pthread_function)
 
 # # 清除所有构建文件
 # add_custom_target(clean

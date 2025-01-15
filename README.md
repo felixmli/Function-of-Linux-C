@@ -23,3 +23,5 @@ This repository covers almost all the functions of Linux C.
     ./output_multithreading
     ```
 
+4. Test文件夹里面也有一些没有整合到具体分类里面的函数
+
